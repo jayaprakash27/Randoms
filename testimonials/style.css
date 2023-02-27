@@ -1,0 +1,112 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #5d5dff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+.cards{
+    position: absolute;
+    margin: 3rem;
+}
+.card{
+    height: 12rem;
+    cursor: pointer;
+    background: white;
+    position: relative;
+    transition: 0.3s ease-in;
+    z-index: 1;
+    box-shadow: 0px 34px 70px rgba(0, 0, 0, 0.25);
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.card:nth-child(2){
+    top: 0rem;
+    left: 28rem;
+}
+.card:nth-child(3){
+    top: 0rem;
+    left: 56rem;
+}
+@media only screen and (max-width: 600px) {
+    .card:nth-child(2){
+        top: 6rem;
+        left: 0rem;
+    }
+    .card:nth-child(3){
+        top: 12rem;
+        left: 0rem;
+    }
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -2rem;
+    width: 24rem;
+    height: 5rem;
+    background: #050505;
+    z-index: 10;
+    box-shadow: 15px 18px 30px rgba(57, 57, 188, 0.16);
+}
+.info{
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    justify-content: space-between;
+    color: white;
+}
+.profile-img{
+    position: relative;
+    left: -1.6rem;
+    height: 6rem;
+    width: 6rem;
+    box-shadow: 15px 18px 30px rgba(63, 63, 63, 0.16);
+}
+.rating{
+    margin: 1rem;
+}
+.desc{
+    position: relative;
+    height: 10rem;
+    width: 25rem;
+    top: -4rem;
+    z-index: 3;
+}
+.descr{
+    position: relative;
+    bottom: -1rem;
+    padding: 2rem;
+}
+.quote{
+    position: relative;
+    top: -6rem;
+    z-index: 11;
+}
+.rounded-rect {
+  position: absolute;
+  width: 65rem;
+  height: 20rem;
+  left: 60rem;
+  top: -8rem;
+  background: #050505;
+  box-shadow: 0px 34px 70px rgba(0, 0, 0, 0.25);
+  border-radius: 300px;
+  transform: rotate(-30deg);
+}
+.rounded-rect-2 {
+    position: absolute;
+    width: 50rem;
+    height: 20rem;
+    left: -20rem;
+    bottom: -13rem;
+    background: #050505;
+    box-shadow: 0px 34px 70px rgba(0, 0, 0, 0.25);
+    border-radius: 300px;
+  }
+.blacks{
+    z-index: 0;
+}
